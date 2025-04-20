@@ -1,9 +1,11 @@
 import Steps from './Steps';
+import Toggle from './Toggle';
 
 function App() {
   return (
     <>
-      <Steps />
+      {/* <Steps /> */}
+      <Toggle />
     </>
   );
 }
