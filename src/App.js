@@ -12,18 +12,18 @@ function App() {
 
   const HandlePrevious = () => {
     if (step > 1) {
-      setStep(step - 1);
+      setStep((s) => s - 1);
     }
   };
 
   const HandleNext = () => {
     if (step < 3) {
-      setStep(step + 1);
+      setStep((s) => s + 1);
     }
   };
   return (
     <>
-      <button className="close" onClick={() => setToggle(!toggle)}>
+      <button className="close" onClick={() => setToggle((s) => !s)}>
         &times;
       </button>
       {toggle && (
