@@ -5,7 +5,8 @@ export default function Toggle() {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(1);
 
-  const time = new Date().getFullYear();
+  const time = new Date('june 14 1990');
+  time.setDate(time.getDate() + count);
   console.log(time);
   return (
     <>
@@ -19,10 +20,7 @@ export default function Toggle() {
         Count {count}
         <button onClick={() => setCount((s) => s + step)}>+</button>
       </div>
-      <p>
-        {' '}
-        {count} days ago was {time} - {count}
-      </p>
+      <p>{time.toDateString()}</p>
     </>
   );
 }

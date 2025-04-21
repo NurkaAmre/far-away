@@ -1,4 +1,4 @@
-import Steps from './Steps';
+// import Steps from './Steps';
 import Toggle from './Toggle';
 
 function App() {
